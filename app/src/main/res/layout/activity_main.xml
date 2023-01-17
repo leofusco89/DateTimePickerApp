@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_icon_limit"
+            android:enabled="false"
+            android:hint="Fecha"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/iv_date"
+                android:layout_width="@dimen/text_icon_limit"
+                android:layout_height="@dimen/text_icon_limit"
+                app:srcCompat="@drawable/ic_date" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_helper_icon_limit"
+            android:enabled="false"
+            android:hint="Hora"
+            app:helperText="Test Helper test"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Large.Inverse">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="@dimen/text_helper_icon_limit"
+                android:layout_height="@dimen/text_helper_icon_limit"
+                app:srcCompat="@drawable/ic_time" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
